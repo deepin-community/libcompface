@@ -1,0 +1,15 @@
+;; Object debian/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "debian/"
+  :tables (list 
+   (semanticdb-table "rules"
+    :major-mode 'makefile-mode
+    :tags '(("SHELL" variable (:default-value ("/bin/bash")) nil [145 163]) ("package" variable (:default-value ("libcompface")) nil [164 184]) ("version" variable (:default-value ("1.0.0")) nil [185 239]) ("version_major" variable (:default-value ("1")) nil [239 302]) ("old_libpath" variable (:default-value ("$(LD_LIBRARY_PATH)")) nil [302 336]) ("LD_LIBRARY_PATH" variable (:default-value ("shared:$(old_libpath)")) nil [336 374]) ("build" function (:arguments ("build-libc6")) nil [376 498]) ("build-libc6" function nil nil [498 617]) ("build-libc5" function nil nil [1357 1469]) ("clean" function nil nil [2316 2595]) ("binary-indep" function (:arguments ("checkroot" "build")) nil [2597 2701]) ("binary-arch" function (:arguments ("checkroot" "build" "binary-common" "binary-libc6")) nil [2777 2928]) ("binary-common" function nil nil [4680 4754]) ("binary-libc6" function nil nil [5414 5473]) ("binary-libc5" function nil nil [6084 6143]) ("binary" function (:arguments ("binary-indep" "binary-arch")) nil [7079 7114]) ("checkroot" function nil nil [7114 7163]))
+    :file "rules"
+    :pointmax 7219
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )
