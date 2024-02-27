@@ -1,111 +1,10 @@
-libcompface (1:1.5.2-5.1) unstable; urgency=medium
-
-  * Non-maintainer upload.
-
-  [ Helmut Grohne ]
-  * Fix FTCBFS: Pass triplet-prefixed CC to make (closes: #861345)
-
-  [ gregor herrmann ]
-  * Fix "Removal of obsolete debhelper compat 5 and 6 in bookworm":
-    Bump to 7 in debian/compat and debian/control{,.common}.
-    Remove manual handling of debian/{copyright,changelog} from debian/rules,
-    handled by dh_install{docs,changelogs}.
-    (Closes: #965632)
-  * Fix "missing required debian/rules targets build-arch and/or build-
-    indep": Add targets to debian/rules.
-    (Closes: #999263)
-
- -- gregor herrmann <gregoa@debian.org>  Sat, 25 Dec 2021 18:12:05 +0100
-
-libcompface (1:1.5.2-5) unstable; urgency=high
-
-  * Fixed bufferoverflow when reading xbm files (closes: #534973)
-
- -- Hakan Ardo <hakan@debian.org>  Mon, 29 Jun 2009 18:49:13 +0200
-
-libcompface (1:1.5.2-4) unstable; urgency=low
-
-  * Converted from debmake to debhelper (closes: #372969)
-  * Changed $(PWD) to $(CURDIR) to build under sudo (closes: #399390)
-
- -- Hakan Ardo <hakan@debian.org>  Mon, 20 Nov 2006 21:06:20 +0100
-
-libcompface (1:1.5.2-3) unstable; urgency=low
-
-  * Applied patch from Matej Vela <vela@debian.org> fixing XBM input
-    (closes: #349015)
-  * Applied patch from Matej Vela <vela@debian.org> fixing include file
-    problem (closes: #12302)
-
- -- Hakan Ardo <hakan@debian.org>  Sat,  4 Feb 2006 16:07:17 +0100
-
-libcompface (1:1.5.2-2) unstable; urgency=low
-
-  * compface now works again (closes: #348326)
-
- -- Hakan Ardo <hakan@debian.org>  Mon, 16 Jan 2006 21:54:47 +0100
-
-libcompface (1:1.5.2-1) unstable; urgency=low
-
-  * Upgraded to v1.5.2 (closes: #261932)
-  * Fixed make up-to-dateness confusion (closes: #261932)
-  * Removed /usr/doc symlinks (closes: #322788)
-  * Added example on how to generate header from jpeg to README.Debian
-    (closes: #199100)
-  * Section information included in the control file (closes: #288824)
-  * libtool or *-config tools are not used (closes: #340392)
-
- -- Hakan Ardo <hakan@debian.org>  Tue, 27 Dec 2005 16:53:12 +0100
-
-libcompface (1989.11.11-24) unstable; urgency=low
-
-  * Fixed local link path (closes: #147607)
-
- -- Hakan Ardo <hakan@debian.org>  Fri,  5 Jul 2002 23:41:21 +0200
-
-libcompface (1989.11.11-23) unstable; urgency=low
-
-  * Spelling errors fixed (Bug #124514, #124920, #124921)
-
- -- Hakan Ardo <hakan@debian.org>  Sat, 12 Jan 2002 15:00:58 +0100
-
-libcompface (1989.11.11-22) unstable; urgency=low
-
-  * Applied Marcus Brinkmans patch removing arch specific libc5 stuff
-    and fixing the errno handling to be more portable ( Bug #106381,
-    #104138 )
-
- -- Hakan Ardo <hakan@debian.org>  Thu, 26 Jul 2001 09:49:53 +0200
-
-libcompface (1989.11.11-21) unstable; urgency=low
-
-  * Fixed bad manpagelink (Bug #102741)
-
- -- Hakan Ardo <hakan@debian.org>  Sat,  7 Jul 2001 21:48:48 +0200
-
-libcompface (1989.11.11-20) unstable; urgency=low
-
-  * Readded Build-Depends as they dissapeard (Bug #92477 #98374)
-  * Rules no longer overwrites LD_LIBRARY_PATH to work with fakeroot
-    (Bug #98182)
-  * Added uncompface.3 link (Bug #99558)
-
- -- Hakan Ardo <hakan@debian.org>  Sun, 24 Jun 2001 16:01:18 +0200
-
-libcompface (1989.11.11-19) unstable; urgency=low
-
-  * compface.o now compiled in (Bug #93269)
-
- -- Hakan Ardo <hakan@debian.org>  Sun, 20 May 2001 13:08:18 +0200
-
 libcompface (1989.11.11-18) unstable; urgency=low
 
   * Added Build-Depends (Bug#92477)
-  * Recompied with stable binutils to fix corrupted libcompface.a
-    archive (Bug#92904)
-  * Now uses dh_strip instead of strip
+	* Recompied with stable binutils to fix corrupted 
+	  libcompface.a archive (Bug#92904)
 
- -- Hakan Ardo <hakan@debian.org>  Sat,  7 Apr 2001 15:40:49 +0200
+ -- Hakan Ardo <hakan@debian.org>  Sat,  7 Apr 2001 15:01:57 +0200
 
 libcompface (1989.11.11-17.5) unstable; urgency=low
 
@@ -224,3 +123,8 @@ libcompface (1989.11.11-11) unstable; urgency=low
     This should fix bug #12428 and #13103.
 
  -- Hakan Ardo <hakan@debian.org>  Thu, 18 Sep 1997 12:37:18 +0200
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "hakan@debian.org"
+End:

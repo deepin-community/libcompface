@@ -1,0 +1,57 @@
+
+--- controls/libcompface_1989.11.11-13  Sun Jan 25 21:15:01 1998
++++ patched/libcompface_1989.11.11-13   Sun Feb  1 20:06:15 1998
+@@ -10,8 +10,8 @@
+ Architecture: any
+ Depends: libcompfaceg1, libc6-dev
+ Conflicts: compface (<= 89.11.11-10)
+-Description: Compres/decompres images for mailheaders, libc6 devel
+-  Converts 48x48 .xbm format (X bitmap) files inte a compressed format 
++Description: Compress/decompress images for mailheaders, libc6 devel
++  Converts 48x48 .xbm format (X bitmap) files to a compressed format 
+   that can be placed in your X-Face: mail header. Some mailreaders, 
+   like exmh will then display this image when the user is reading your mail.
+ 
+@@ -21,8 +21,8 @@
+ Architecture: any
+ Depends: ${shlibs:Depends}
+ Conflicts: compface (<= 89.11.11-10)
+-Description: Compres/decompres images for mailheaders, libc6 runtime
+-  Converts 48x48 .xbm format (X bitmap) files inte a compressed format 
++Description: Compress/decompress images for mailheaders, libc6 runtime
++  Converts 48x48 .xbm format (X bitmap) files to a compressed format 
+   that can be placed in your X-Face: mail header. Some mailreaders, 
+   like exmh will then display this image when the user is reading your mail.
+ 
+@@ -31,8 +31,8 @@
+ Priority: optional
+ Architecture: any
+ Depends: libcompface1, libc5-altdev
+-Description: Compres/decompres images for mailheaders, libc5 devel
+-  Converts 48x48 .xbm format (X bitmap) files inte a compressed format 
++Description: Compress/decompress images for mailheaders, libc5 devel
++  Converts 48x48 .xbm format (X bitmap) files to a compressed format 
+   that can be placed in your X-Face: mail header. Some mailreaders, 
+   like exmh will then display this image when the user is reading your mail.
+ 
+@@ -42,8 +42,8 @@
+ Architecture: any
+ Depends: libc5 (>= 5.4.0.0)
+ Conflicts: libc5-dev, compface (<= 89.11.11-10)
+-Description: Compres/decompres images for mailheaders, libc5 runtime
+-  Converts 48x48 .xbm format (X bitmap) files inte a compressed format 
++Description: Compress/decompress images for mailheaders, libc5 runtime
++  Converts 48x48 .xbm format (X bitmap) files to a compressed format 
+   that can be placed in your X-Face: mail header. Some mailreaders, 
+   like exmh will then display this image when the user is reading your mail.
+ 
+@@ -52,7 +52,7 @@
+ Priority: optional
+ Architecture: any
+ Depends: ${shlibs:Depends}
+-Description: Compres/decompres images for mailheaders, user tools
+-  Converts 48x48 .xbm format (X bitmap) files inte a compressed format 
++Description: Compress/decompress images for mailheaders, user tools
++  Converts 48x48 .xbm format (X bitmap) files to a compressed format 
+   that can be placed in your X-Face: mail header. Some mailreaders, 
+   like exmh will then display this image when the user is reading your mail.
